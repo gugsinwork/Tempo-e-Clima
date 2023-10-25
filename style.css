@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-image: radial-gradient(circle, #000cff, #0115ff, #031bff, #0520ff, #0725ff, #0030ff, #003aff, #0042ff, #004fff, #005bff, #0065ff, #006fff);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22%;
+}
+.searchLocal{
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    height: 80px;
+    border-radius: 25px;
+    width: 300px;
+    overflow: hidden;
+    transition: 0.90s;
+}
+.cardDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.pointLocal > i{
+    color:#0725ff;
+    font-size: 20px;
+    margin-right: 15px;
+    position: relative;
+    top: 1px;
+}
+#searchButton{
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+.submitSearch > i{
+    color: #0725ff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+.textCentral{
+    position: relative;
+    bottom: 160px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.cloud > i{
+    font-size: 35px;
+    color:  rgb(255, 217, 0);
+}
+.cloud{
+    position: relative;
+    bottom: 160px;
+    left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 30%; 
+
+    .searchLocal {
+        width: 70%;
+    }
+
+
+}
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 40%;
+    }
+
+    .searchLocal {
+        width: 30%;
+    }
+
+}
+
