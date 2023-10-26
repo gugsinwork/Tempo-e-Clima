@@ -6,6 +6,7 @@
     <title>Clima tempo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,13 +14,19 @@
             <h1 class="textCentral">C<span style="color: rgb(255, 217, 0);">lim</span>a.com</h1>
             <div class="cloud"><i class="bi bi-clouds-fill"></i></div>
         </div>
-        <div class="searchLocal" id="menu">
-            <div class="cardDiv"><div class="pointLocal"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="inputSearch"><input id="searchButton" placeholder="Enter your location" type="text"></div>
-                <div class="submitSearch"><i class="bi bi-search-heart-fill" id="submitButton"></i></div>
+        <div id="card">
+            <div id="input">
+                <div class="localStyle"><i class="bi bi-geo-alt-fill"></i></div>
+                <input type="text" id="cidade" placeholder="     Enter your location">
+                <button class="buttonStyle" onclick="buscarPrevisaoTempo()"><i class="bi bi-search-heart-fill"></i></button>
+            </div>
+            <div id="resultado">
+                <h2>Previsão do Tempo</h2>
+                <div id="previsao">
+                    <!-- Aqui será inserido o ícone de condições climáticas -->
+                </div>
             </div>
         </div>
     </div>
 </body>
-    <script src="script.js"></script>
 </html>
